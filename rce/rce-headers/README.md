@@ -1,5 +1,4 @@
 # Fuzzing Headers for RCE
-Bash script for fuzzing headers for RCE by providing a list of URL's using ffuf
 
 Example usage: ./rce-headers.sh urls.txt
 
