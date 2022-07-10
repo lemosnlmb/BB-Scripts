@@ -12,4 +12,4 @@ server=$2
 server_fix=$(echo $server | sed -r "s/https?:\/\///")
 
 echo -e "${RED}CHECK YOUR SERVER FOR POTENTIALS CALLBACKS!${NC}"
-ffuf -v -w $list:W1,headers.txt:W2 -H "W2: $server_fix" -u W1 2 > /dev/null
+ffuf -r -w $list:W1,headers.txt:W2 -H "W2: $server_fix" -u W1 2 > /dev/null
