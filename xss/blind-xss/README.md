@@ -1,6 +1,5 @@
 # Fuzzing Headers for Blind XSS
 
-Bash script for fuzzing headers for Blind XSS by providing a list of URL's using ffuf
 
 Example usage: ./blind-xss.sh urls.txt YOUR.xss.ht
 
