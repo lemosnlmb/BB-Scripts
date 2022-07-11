@@ -3,7 +3,8 @@
 Source Code Scanner (SCS) is a bash script that scans for exposed Git, Bazaar, Mercurial and Subversion folders by providing a list of URL's.
 
 Inspired tweet: 
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">If checking for exposed source code is not in your methodology, then you may be missing out! 👁️‍🗨️<br><br>Let this hint by <a href="https://twitter.com/daffainfo?ref_src=twsrc%5Etfw">@daffainfo</a> help you out in that case, because exposed source code is a gold mine!<a href="https://twitter.com/hashtag/bugbounty?src=hash&amp;ref_src=twsrc%5Etfw">#bugbounty</a> <a href="https://twitter.com/hashtag/bugbountytips?src=hash&amp;ref_src=twsrc%5Etfw">#bugbountytips</a> 👇 <a href="https://t.co/NwdAwmGEgL">pic.twitter.com/NwdAwmGEgL</a></p>&mdash; INTIGRITI (@intigriti) <a href="https://twitter.com/intigriti/status/1533050946212839424?ref_src=twsrc%5Etfw">June 4, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote class="twitter-tweet"><p>We can now embed Public Facebook Posts on websites.&#10;&#10;<a href="http://t.co/Bmqpq3GgSB">http://t.co/Bmqpq3GgSB</a></p>&mdash; Andrea DeMers (@ademers) <a href="https://twitter.com/ademers/statuses/370530357390888960">August 22, 2013</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 ### Usage
 
