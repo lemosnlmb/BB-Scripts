@@ -28,7 +28,8 @@ Examples:
    ./scs.sh -l urls.txt -a              Scanning for all folders
    ```
 
-![image](https://user-images.githubusercontent.com/80685782/178268055-bcd1975e-c7b3-49db-9d52-f6d8f1b4187b.png)
+![image](https://user-images.githubusercontent.com/80685782/178269188-d42f65a0-e1b8-45cf-a063-51616a554319.png)
+
 
 
 
