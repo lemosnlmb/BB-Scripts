@@ -10,6 +10,6 @@ server=$2
 
 cat $list | grep "=" | qsreplace ";curl $server" 2>/dev/null | sort -u > $list.tmp
 echo -e "${RED}CHECK YOUR SERVER FOR POTENTIALS CALLBACKS!${NC}"
-ffuf -r -w $list -u FUZZ 2 > /dev/null
+ffuf -r -w $list.tmp -u FUZZ 2 > /dev/null
 
 rm -rf $list.tmp
