@@ -15,10 +15,10 @@ Required Flag:
    -l, --list                           Add URL's list to scan
 
 Scan modes: 
-   -g, --git                            Scan for exposed git folders
+   -g, --git                            Scan for exposed Git folders
    -b, --bazaar                         Scan for exposed Bazaar folders
-   -m, --mercurial                      Scan for exposed Mercury folders
-   -s, --subversion                     Scan for exposed svn folders
+   -m, --mercurial                      Scan for exposed Mercurial folders
+   -s, --subversion                     Scan for exposed Subversion folders
    -a, --all                            Scan for all exposed folders
 
 Examples: 
