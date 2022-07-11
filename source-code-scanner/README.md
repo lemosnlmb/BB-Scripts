@@ -7,6 +7,7 @@ Source Code Scanner (SCS) is a script that scans for exposed git, Bazaar, Mercur
 ```sh
 ./scs.sh -h
 ```
+This will display help for the tool. Here are all the switches it supports.
 
 ```
 Required Flag: 
