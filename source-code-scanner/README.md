@@ -1,6 +1,7 @@
 # Source Code Scanner (SCS)
 
-Source Code Scanner (SCS) is a bash script that scans for exposed git, Bazaar, Mercury and svn folders by providing a list of URL's.
+Source Code Scanner (SCS) is a bash script that scans for exposed Git, Bazaar, Mercurial and Subversion folders by providing a list of URL's.
+Inspired tweet: https://twitter.com/intigriti/status/1533050946212839424
 
 ### Usage
 
@@ -16,13 +17,13 @@ Required Flag:
 Scan modes: 
    -g, --git                            Scan for exposed git folders
    -b, --bazaar                         Scan for exposed Bazaar folders
-   -m, --mercury                        Scan for exposed Mercury folders
-   -s, --svn                            Scan for exposed svn folders
+   -m, --mercurial                      Scan for exposed Mercury folders
+   -s, --subversion                     Scan for exposed svn folders
    -a, --all                            Scan for all exposed folders
 
 Examples: 
-   ./scs.sh -l urls.txt -g -b -s        Scanning for git, Bazaar and svn folders
-   ./scs.sh -l urls.txt -m              Scanning only for Mercury folders
+   ./scs.sh -l urls.txt -g -b -s        Scanning for Git, Bazaar and Subversion folders
+   ./scs.sh -l urls.txt -m              Scanning only for Mercurial folders
    ./scs.sh -l urls.txt -a              Scanning for all folders
    ```
 
