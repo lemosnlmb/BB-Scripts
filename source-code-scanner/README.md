@@ -26,6 +26,7 @@ Examples:
    ./scs.sh -l urls.txt -a              Scanning for all folders
    ```
 
-![image](https://user-images.githubusercontent.com/80685782/178124612-cd17a9b0-d8cb-4034-b7b5-9a9b1a95d49f.png)
+![image](https://user-images.githubusercontent.com/80685782/178265579-9ebeeeba-2569-4f0b-9433-5f7b2b2adac5.png)
+
 
 
