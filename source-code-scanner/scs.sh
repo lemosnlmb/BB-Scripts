@@ -147,5 +147,4 @@ for targetna in $(cat $list); do
 			echo -e "${RED}[+] VULN: ${NC}${targetna}"
 		fi
 	done
-echo ""
 fi
