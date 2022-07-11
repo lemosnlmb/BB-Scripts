@@ -23,14 +23,14 @@ printusage(){
     echo -e "   -l, --list              		${YELLOW}Add URL's to scan${NC}"
     echo -e "${CYAN}"
     echo -e "Scan modes: ${NC}"
-    echo -e "   -g, --git               		${YELLOW}Scan for exposed git folders${NC}"
+    echo -e "   -g, --git               		${YELLOW}Scan for exposed Git folders${NC}"
     echo -e "   -b, --bazaar            		${YELLOW}Scan for exposed Bazaar folders${NC}"
-    echo -e "   -m, --mercury           		${YELLOW}Scan for exposed Mercury folders${NC}"
-    echo -e "   -s, --svn               		${YELLOW}Scan for exposed svn folders${NC}"
+    echo -e "   -m, --mercurial           		${YELLOW}Scan for exposed Mercurial folders${NC}"
+    echo -e "   -s, --subversion               	${YELLOW}Scan for exposed Subversion folders${NC}"
     echo -e "   -a, --all               		${YELLOW}Scan for all exposed folders${NC}"
     echo -e "${CYAN}"
     echo -e "Examples: ${NC}"
-    echo -e "   ./scs.sh -l urls.txt -g -b -s        ${YELLOW}Scanning for git, Bazaar and svn folders${NC}"
+    echo -e "   ./scs.sh -l urls.txt -g -b -s        ${YELLOW}Scanning for Git, Bazaar and Subversion folders${NC}"
     echo -e "   ./scs.sh -l urls.txt -m              ${YELLOW}Scanning only for Mercury folders${NC}"
     echo -e "   ./scs.sh -l urls.txt -a              ${YELLOW}Scanning for all folders${NC}"
     exit
@@ -54,13 +54,13 @@ while [ -n "$1" ]; do
 		shift
 		continue ;;
 
-	    -m|-mercury|--mercury)
-		mercury=true
+	    -m|-mercurial|--mercurial)
+		mercurial=true
 		shift
 		continue ;;
 
-	    -s|-svn|--svn)
-		svn=true
+	    -s|-subversion|--subversion)
+		subversion=true
 		shift
 		continue ;;
 
@@ -92,7 +92,7 @@ fi
 
 
 if [ $git ] || [ $all ]; then
-echo -e "${PURPLE}Scanning for exposed git folders${NC}"
+echo -e "${PURPLE}Scanning for exposed Git folders${NC}"
 	for targetna in $(cat $list); do
 		if [[ $(curl -s -m 3 -A "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:65.0) Gecko/20100101 Firefox/65.0" "${targetna}/.git/" -w %{http_code} -o /dev/null ) =~ '403' ]]; then
 			echo -e "${YELLOW}[+] MAYBE VULN: ${NC}${targetna}"
@@ -121,8 +121,8 @@ echo ""
 fi
 
 
-if [ $mercury ] || [ $all ]; then
-echo -e "${PURPLE}Scanning for exposed Mercury folders${NC}"
+if [ $mercurial ] || [ $all ]; then
+echo -e "${PURPLE}Scanning for exposed Mercurial folders${NC}"
 for targetna in $(cat $list); do
 		if [[ $(curl -s -m 3 -A "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:65.0) Gecko/20100101 Firefox/65.0" "${targetna}/.hg/hgrc/" -w %{http_code} -o /dev/null ) =~ '403' ]]; then
 			echo -e "${YELLOW}[+] MAYBE VULN: ${NC}${targetna}"
@@ -136,8 +136,8 @@ echo ""
 fi
 
 
-if [ $svn ] || [ $all ]; then
-echo -e "${PURPLE}Scanning for exposed svn folders${NC}"
+if [ $subversion ] || [ $all ]; then
+echo -e "${PURPLE}Scanning for exposed Subversion folders${NC}"
 for targetna in $(cat $list); do
 		if [[ $(curl -s -m 3 -A "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:65.0) Gecko/20100101 Firefox/65.0" "${targetna}/.svn/" -w %{http_code} -o /dev/null ) =~ '403' ]]; then
 			echo -e "${YELLOW}[+] MAYBE VULN: ${NC}${targetna}"
