@@ -6,7 +6,7 @@ Example usage: ./scs.sh -l urls.txt
 
 ```
 Required Flag: 
-   -l, --list                           Add URL's to scan
+   -l, --list                           Add URL's list to scan
 
 Scan modes: 
    -g, --git                            Scan for exposed git folders
